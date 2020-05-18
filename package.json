@@ -1,6 +1,6 @@
 {
   "name": "vue-crop-region",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A vue component of crop region",
   "main": "dist/index.min.js",
   "scripts": {

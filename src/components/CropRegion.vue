@@ -1,6 +1,7 @@
 <template>
   <div class="cropper-wrap" v-show="visible" ref="wrap">
     <div class="cropper-view"
+      :class="{ unmovable: !movable }"
       :style="{
         width: w + 'px',
         height: h + 'px',
@@ -395,6 +396,9 @@ export default {
   cursor: move;
   color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 0 5000px;
+}
+.cropper-view.unmovable{
+  cursor: auto;
 }
 
 .cropper-info {
